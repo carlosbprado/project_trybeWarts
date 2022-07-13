@@ -13,7 +13,7 @@
 .header-form input {
   height: 28px;
   width: 40%;
-  margin: 0px 5px;
+  margin: 0 5px;
   border-radius: 8px;
 }
 
@@ -22,11 +22,15 @@
   justify-content: flex-end;
 }
 
-.main-container,
-#evaluation-form {
+.main-container , #evaluation-form {
   display: flex;
 }
 
 #evaluation-form {
   width: 675px;
+  flex-direction: column;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
 }
