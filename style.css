@@ -34,3 +34,17 @@
 #trybewarts-forms-logo {
   height: 500px;
 }
+
+.input-main {
+  border: 1px solid black;
+  flex-direction: row;
+
+}
+
+.input-main input {
+  width: 45%;
+}
+
+.input-main select {
+  width: 38%;
+}
