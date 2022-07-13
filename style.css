@@ -7,8 +7,26 @@
 
 .header-form {
   display: flex;
+  border: 1px solid black;
+}
+
+.header-form input {
+  height: 28px;
+  width: 40%;
+  margin: 0px 5px;
+  border-radius: 8px;
 }
 
 .trybewarts-login {
   display: flex;
+  justify-content: flex-end;
+}
+
+.main-container,
+#evaluation-form {
+  display: flex;
+}
+
+#evaluation-form {
+  width: 675px;
 }
