@@ -67,3 +67,10 @@
   padding: 15px 0;
 
 }
+
+.text-area {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+
+}
