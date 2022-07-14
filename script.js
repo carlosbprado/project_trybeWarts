@@ -13,3 +13,17 @@ function validarBotao() {
 }
 
 botaoHeader.addEventListener('click', validarBotao);
+
+
+ const check = document.getElementById('agreement')
+ const botaoSubmit = document.getElementById('submit-btn')
+
+ check.addEventListener('click', enabledBtn)
+
+ function enabledBtn () {
+   if (botaoSubmit.disabled === true) {
+    botaoSubmit.disabled = false  
+  } else {
+    botaoSubmit.disabled = true
+  }
+ }
