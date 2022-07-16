@@ -27,16 +27,16 @@ function enabledBtn() {
 
 check.addEventListener('click', enabledBtn);
 
-const textarea = document.getElementById('textarea')
-const counter = document.getElementById('counter')
+const textarea = document.getElementById('textarea');
+const counter = document.getElementById('counter');
 
 const contador = (event) => {
-  let limite = 500;
-  let count = textarea.value.length
-  counter.innerText = Math.abs(count - limite) 
+  const limite = 500;
+  const count = textarea.value.length;
+  counter.innerText = Math.abs(count - limite);
   if (count >= limite) {
-    event.preventDefault()
-  } 
-}
+    event.preventDefault();
+  }
+};
 
-textarea.addEventListener('input', contador)
+textarea.addEventListener('input', contador);
