@@ -26,3 +26,17 @@ function enabledBtn() {
 }
 
 check.addEventListener('click', enabledBtn);
+
+const textarea = document.getElementById('textarea')
+const counter = document.getElementById('counter')
+
+const contador = (event) => {
+  let limite = 500;
+  let count = textarea.value.length
+  counter.innerText = Math.abs(count - limite) 
+  if (count >= limite) {
+    event.preventDefault()
+  } 
+}
+
+textarea.addEventListener('input', contador)

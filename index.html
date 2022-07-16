@@ -36,6 +36,7 @@
     </header>
     <main class="main-container">
       <form action="" id="evaluation-form">
+        <h2>Formulario de Avaliação</h2>
         <div class="input-main">
           <input type="text" placeholder="Nome" id="input-name" />
           <input type="text" placeholder="Sobrenome" id="input-lastname" />
@@ -48,6 +49,7 @@
             <option id="pytherina-house" value="Pytherina">Pytherina</option>
           </select>
         </div>
+        <hr id="first">
         <section class="check-radio-content">
           <div class="radio-main">
             <label for="family" id="label-family">Qual sua família?</label>
@@ -68,7 +70,7 @@
           <div>
             <label for="" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
             <br>
-            <label for="hof">Hofs</label>
+            <label for="hof">HoFs</label>
             <input type="checkbox" name="Hofs" class="subject" value="HoFs" id="hof">
             <label for="jest">Jest</label>
             <input type="checkbox" name="Jest" class="subject" value="Jest" id="jest">
@@ -82,6 +84,7 @@
             <input type="checkbox" name="Python" class="subject" value="Python" id="python">
           </div>
         </section>
+        <hr>
        <section class="evaluation-content">
         <label for="" id="label-rate">Como você avalia a Trybewarts?</label>
         <input type="radio" name="rate" id="1" value="1">
@@ -107,7 +110,8 @@
        </section>
        <div class="text-area">
          <label class="textarea" for="">Deixe seu comentário:</label>
-         <textarea name="" id="" cols="30" rows="10" maxlength="500"></textarea>
+         <span id="counter">500</span>
+         <textarea name="" id="textarea" cols="30" rows="10" maxlength="500"></textarea>
        </div>
        <div>
         <label id="label-infos" for="">Você concorda com o uso das informações acima?</label>
@@ -123,10 +127,12 @@
         alt="imagem da trybewarts"
       />
     </main>
-    <footer id="rodape">
+
+    <div id="rodape">
+    <footer>
         <h3>Direitos reservados à Trybewarts©</h3>
     </footer>
-
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
